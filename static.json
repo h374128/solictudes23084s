@@ -1,0 +1,19 @@
+{
+    "root": "public",
+    "routes": {
+      "/**": "index.html"
+    },
+    "headers": {
+      "/**": {
+        "Cache-Control": "max-age=31536000, immutable"
+      }
+    },
+    "redirects": [
+      {
+        "source": "/old-route",
+        "destination": "/new-route",
+        "type": 301
+      }
+    ]
+  }
+  
